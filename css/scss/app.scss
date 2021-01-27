@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import "./vars";
+@import "./components/header";
+@import "./components/nav";
+@import "./components/footer";
+@import "./components/cookie";
+@import "./components/owl";
+
+@import "./pages/chambres";
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  box-shadow: $boxShadow;
+  margin: 25px 0;
+  color: $gris;
+  font-weight: 900;
+  transition: 0.3s;
+  &:hover {
+    color: inherit;
+    padding: 1rem 3rem;
+  }
+}
+.btn_small {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  &:hover {
+    padding: 0.5rem 1.5rem;
+  }
+}
+.btn_white {
+  background-color: white;
+  &:hover {
+    color: $gris;
+  }
+}
+.btn_parme {
+  background-color: $parme;
+}
+.btn_bleu {
+  background-color: $bleu;
+}
+.btn_menthe {
+  background-color: $menthe;
+  color: white;
+  &:hover {
+    color: white;
+  }
+}
+.btn_vert {
+  background-color: $vert;
+}
+.btn_saumon {
+  background-color: $saumon;
+  color: white;
+}
+.btn_orange {
+  background-color: $orange;
+}
+
+.cell {
+  position: relative;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+}
+a {
+  color: $menthe;
+  &:hover {
+    color: $chili;
+  }
+}
+
+section {
+  padding: 50px 0;
+}
+section.hero h1 {
+  font-size: 2.8rem;
+}
+.round {
+  border-radius: 50%;
+  border-left: 2px solid $vert;
+  border-bottom: 2px solid $orange;
+  padding: 20px;
+  img {
+    border-radius: 50%;
+  }
+}
+
+.video {
+  position: absolute;
+  bottom: 9%;
+  left: 9%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: $boxShadow;
+  img {
+    width: 30px;
+  }
+}
+.titre_section {
+  margin: 50px 0;
+  span {
+    color: $menthe;
+    font-weight: bold;
+  }
+}
+.section_services {
+  position: relative;
+  z-index: 1;
+  .epice_1 {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    // max-width: 350px;
+    z-index: -1;
+  }
+  .epice_2 {
+    position: absolute;
+    left: 50px;
+    bottom: -150px;
+    width: 120px;
+    z-index: -1;
+    img {
+      transform: rotate(15deg);
+    }
+  }
+}
+.services {
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: $boxShadow;
+  background-color: white;
+  margin: 20px 0;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  border-color: $menthe;
+  h3 {
+    font-size: 1.4rem;
+    color: $menthe;
+  }
+  a.btn {
+    background-color: $menthe;
+    color: white;
+  }
+}
+.les_chambres {
+  // background-color: $menthe;
+  display: flex;
+  align-items: center;
+  // color: white;
+  box-shadow: $boxShadow;
+  border-radius: 8px 0 0 8px;
+}
+.bg_linear {
+  // background: linear-gradient(100deg, $menthe, $pavot);
+  // background-color: $orange;
+  // border-top: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: $boxShadow;
+  border-radius: 0 8px 8px 0;
+  // color: white;
+}
+
+.chambres,
+.petit-dejeuner {
+  padding: 50px;
+  h3 {
+    font-size: 1.2rem;
+  }
+  a {
+    margin-top: 10px;
+  }
+}
+
+.item {
+  overflow: hidden;
+  border-radius: 8px;
+  a.bg {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    height: 320px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    transition: 0.3s;
+
+    h3 {
+      display: block;
+      background-color: white;
+      font-size: 1.1rem;
+      padding: 0 5px;
+      border-radius: 3px;
+      box-shadow: $boxShadow;
+      color: white;
+    }
+    h3.pavot {
+      background-color: $pavot;
+      color: white;
+    }
+    h3.vanille {
+      background-color: $vanille;
+      color: white;
+    }
+    h3.chili {
+      background-color: $chili;
+    }
+    h3.mentha {
+      background-color: $menthe;
+      // color: $gris;
+    }
+    h3.yuzu {
+      background-color: $yuzu;
+    }
+  }
+  &:hover {
+    box-shadow: $boxShadow;
+    a {
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .bg_linear {
+    border-top: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+  }
+}

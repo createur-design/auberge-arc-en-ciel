@@ -1,0 +1,17 @@
+.owl-carousel .owl-stage-outer {
+  overflow: hidden;
+  border-radius: 8px;
+}
+.owl-dots {
+  position: absolute;
+  bottom: -35px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.owl-theme .owl-dots .owl-dot span {
+  background: $gris;
+}
+.owl-theme .owl-dots .owl-dot.active span {
+  background: $menthe;
+}

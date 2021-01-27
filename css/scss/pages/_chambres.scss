@@ -1,0 +1,84 @@
+.mentha {
+  .tarif {
+    background: linear-gradient(100deg, $menthe, $vert);
+    background-color: $menthe;
+  }
+  h2 {
+    a {
+      color: $menthe;
+    }
+  }
+}
+.yuzu {
+  .tarif {
+    background: linear-gradient(100deg, $yuzu, $orange);
+    background-color: $yuzu;
+  }
+  h2 {
+    a {
+      color: $yuzu;
+    }
+  }
+}
+.chili {
+  .tarif {
+    background: linear-gradient(100deg, $chili, $saumon);
+    background-color: $chili;
+  }
+  h2 {
+    a {
+      color: $chili;
+    }
+  }
+}
+.pavot {
+  .tarif {
+    background: linear-gradient(100deg, $pavot, $bleu);
+    background-color: $pavot;
+  }
+  h2 {
+    a {
+      color: $pavot;
+    }
+  }
+}
+.vanille {
+  .tarif {
+    background: linear-gradient(100deg, $vanille, $jaune);
+    background-color: $vanille;
+  }
+  h2 {
+    a {
+      color: $vanille;
+    }
+  }
+}
+
+.tarif {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+  // background: linear-gradient(100deg, $saumon, $orange);
+  // background-color: $orange;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  box-shadow: $boxShadow;
+  span {
+    display: block;
+    font-size: 1rem;
+  }
+}
+.content {
+  padding: 50px;
+}
+
+@media screen and (min-width: 640px) {
+  .content {
+    padding: 100px;
+  }
+}

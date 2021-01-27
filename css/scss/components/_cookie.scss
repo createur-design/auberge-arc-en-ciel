@@ -1,0 +1,11 @@
+.cookie-notice-container {
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+  a.btn-cookie {
+    background-color: $menthe !important;
+    // color: $gris !important;
+  }
+  .cn-close-icon:after,
+  .cn-close-icon:before {
+    background-color: $gris;
+  }
+}
